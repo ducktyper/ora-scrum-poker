@@ -1,0 +1,26 @@
+.select-box {
+  padding: .3em;
+}
+
+.select-box > .choice  {
+  box-sizing: border-box;
+  width: 33.333%;
+  padding: .6em;
+  text-align: center;
+  display: inline-block;
+}
+
+.select-box > .choice > div {
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  background-color: #1C62BF;
+  color: #FFFFFF;
+  font-size: 2em;
+  padding: .3em 0;
+  cursor: pointer;
+}
+
+.select-box > .choice > div.coffee {
+  background: #1C62BF url('coffee.png') no-repeat center center;
+  background-size: 25px 25px;
+}
