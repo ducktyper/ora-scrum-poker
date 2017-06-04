@@ -5,14 +5,18 @@ import RevealCard from './RevealCard.js';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {choice: null, reveal: false};
+    // this.state = {choice: 1, reveal: false};
+    // this.state = {choice: 1, reveal: true};
+  }
+
   render() {
-    return (
-      <div className='app'>
-        <SelectBox />
-        <ReadyToReveal />
-        <RevealCard choice='1'/>
-      </div>
-    );
+    if (this.state.choice === null ) { return (<SelectBox />) };
+    if (this.state.reveal === false) { return (<ReadyToReveal />) };
+
+    return (<RevealCard choice={this.state.choice}/>);
   }
 }
 
