@@ -4,7 +4,7 @@ import './RevealCard.css';
 class RevealCard extends Component {
   render() {
     return (
-      <div className='reveal-card size-1'>
+      <div className='reveal-card size-1' onClick={() => this.props.reset()}>
         {this.props.choice}
       </div>
     );
