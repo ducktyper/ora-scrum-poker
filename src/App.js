@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className='select-box'>
+        <div className='choice'><div>0</div></div>
+        <div className='choice'><div>1</div></div>
+        <div className='choice'><div>2</div></div>
+        <div className='choice'><div>3</div></div>
+        <div className='choice'><div>5</div></div>
+        <div className='choice'><div>8</div></div>
+        <div className='choice'><div>13</div></div>
+        <div className='choice'><div>21</div></div>
+        <div className='choice'><div>34</div></div>
+        <div className='choice'><div>55</div></div>
+        <div className='choice'><div>89</div></div>
+        <div className='choice'><div>144</div></div>
+        <div className='choice'><div>?</div></div>
+        <div className='choice'><div>∞</div></div>
+        <div className='choice'><div className='coffee'>&nbsp;</div></div>
       </div>
     );
   }
